@@ -1,0 +1,17 @@
+# Core HF stack
+huggingface_hub>=0.23.0
+hf_transfer>=0.1.6
+transformers>=4.44.0
+accelerate>=0.33.0
+safetensors>=0.4.3
+
+# System monitoring (replaces nvidia-smi on GB10)
+psutil>=5.9.0
+
+# Benchmarking utils
+tqdm>=4.66.0
+pandas>=2.2.0
+
+# NOTE: torch is NOT pinned here.
+# ARM64 cu128 requires a manually installed wheel.
+# See scripts/setup_arm64.sh for the correct install command.
